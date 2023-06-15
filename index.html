@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul - Devoloper Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;1,100;1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(4, 1, 33);
+            color: whitesmoke;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        .over-flow {
+            overflow: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 75px;
+            background-color: rgb(11, 4, 60);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 16px;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(236, 177, 177);
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 70px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+        }
+
+        .rightSection img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .orange {
+            color: skyblue;
+        }
+
+        #element {
+            color: skyblue;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+        }
+
+        hr {
+            border: 0;
+            background-color: skyblue;
+            height: 1.5px;
+            margin: 115px 84px;
+        }
+
+        .secondSection {
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 2rem;
+        }
+
+        .secondSection .container {
+            display: flex;
+        }
+
+        .container a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .secondSection .box {
+            width: 300px;
+            height: 300px;
+            border: 5px solid skyblue;
+            border-radius: 35px;
+            margin: 25px 15px;
+            padding: 20px;
+        }
+
+        .box:hover {
+            width: 320px;
+            height: 320px;
+            transition: 0.5s;
+        }
+
+        .box-content {
+            display: flex;
+            margin-top: 8px;
+            justify-content: space-between;
+        }
+
+        .content-right {
+            margin-left: 12px;
+        }
+
+        .content-left img {
+            width: 150px;
+            height: 200px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        footer {
+            background-color: rgb(3, 3, 3);
+        }
+
+        .footer {
+            padding: 23px 120px;
+            justify-content: space-evenly;
+
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 230px;
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: grey;
+            justify-content: center;
+        }
+
+        .box h1{
+            font-size:1.2rem;
+        }
+        @media screen and (max-width: 768px) {
+            .secondSection .box {
+                width: 135px;
+                height: 300px;
+            }
+
+            .secondSection .box-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content-left img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .content-right {
+                font-size: 13.5px;
+            }
+        }
+
+        @media screen and (max-width:430px) {
+            nav .right {
+                display: none;
+            }
+
+            .firstSection {
+                flex-direction: column-reverse;
+            }
+
+            .content-left img {
+                width: 35px;
+                height: 50px;
+            }
+
+            .content-right {
+                font-size: 0.5rem;
+            }
+
+            .secondSection .box {
+                width: 25px;
+                height: 300px;
+            }
+
+         .box h1{
+                font-size: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="over-flow">
+        <nav>
+            <div class="left">Rahul's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="over-flow">
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="orange">Rahul</span>
+                <div>I am a Passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="dev.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span style="color: gray;">What I have done so far</span>
+            <div class="head">
+                <h1>Projects</h1>
+            </div>
+            <div class="container">
+                <a href="#">
+                    <div class="box">
+                        <u>
+                            <h1>Project Name</h1>
+                        </u>
+                        <div class="box-content">
+                            <div class="content-left">
+                                <img src="project.webp" alt="">
+                            </div>
+                            <div class="content-right">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur libero illo odio
+                                    perferendis similique quam eligendi cumque dolorem unde vel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="box">
+                        <u>
+                            <h1>Project Name</h1>
+                        </u>
+                        <div class="box-content">
+                            <div class="content-left">
+                                <img src="project.webp" alt="">
+                            </div>
+                            <div class="content-right">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur libero illo odio
+                                    perferendis similique quam eligendi cumque dolorem unde vel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="box">
+                        <u>
+                            <h1>Project Name</h1>
+                        </u>
+                        <div class="box-content">
+                            <div class="content-left">
+                                <img src="project.webp" alt="">
+                            </div>
+                            <div class="content-right">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur libero illo odio
+                                    perferendis similique quam eligendi cumque dolorem unde vel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="over-flow">
+        <div class="flex footer">
+            <div class="boox">
+                <h3>Rahul's Devoloper Portfolio</h3>
+            </div>
+            <div class="boox">
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                </ul>
+            </div>
+            <div class="boox">
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                </ul>
+            </div>
+            <div class="boox">
+                <ul>
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-rights"><a href="#"
+                style="text-decoration: none; color: grey;"><span>www.rahulsportfolio.com</span></a> | All rights
+            Reserved <a href=https://www.linkedin.com/in/rahul-yaramala-9572bb204 /><img src="linkedIn.png" alt=""
+                style="height: 20px; width: 20px;"></a></div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Devoloper.', 'C ,  Java Programmer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
